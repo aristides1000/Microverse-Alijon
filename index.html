@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!--
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Tourist visits to my country Venezuela</h1>
+      <p id="description" class="description text-center">
+        Tell us what you think about Venezuela and what have you heard about it
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue"></span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" required />
+      </div>
+      <div class="form-group">
+        <p>What is your economic activity?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>choose an activity</option>
+          <option value="entrepreneur">entrepreneur</option>
+          <option value="merchant">merchant</option>
+          <option value="employee">employee</option>
+          <option value="Prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you like to know Venezuela?</p>
+        <label>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+        <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What activities do you like to do when you do tourism?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>choose an activity</option>
+          <option value="eat-local-food">eat local food</option>
+          <option value="discover-exotic-places">discover exotic places</option>
+          <option value="make-ecotourism">make ecotourism</option>
+          <option value="know-the-culture-of-the-place">know the culture of the place</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What places in Venezuela would you like to visit?
+          <span class="clue">(You can select several sites that you want to know)</span>
+        </p>
+
+        <label><input name="prefer" value="caracas" type="checkbox" class="input-checkbox" />Caracas</label>
+        <label><input name="prefer" value="national-park-canaima" type="checkbox" class="input-checkbox" />National park
+          Canaima</label>
+        <label><input name="prefer" value="margarita-island" type="checkbox" class="input-checkbox" />Margarita
+          Island</label>
+        <label><input name="prefer" value="los-roques-archipelago" type="checkbox" class="input-checkbox" />Los Roques
+          Archipelago</label>
+        <label><input name="prefer" value="merida" type="checkbox" class="input-checkbox" />Merida</label>
+        <label><input name="prefer" value="national-park-morrocoy" type="checkbox" class="input-checkbox" />National
+          park Morrocoy</label>
+        <label><input name="prefer" value="maracaibo" type="checkbox" class="input-checkbox" />Maracaibo</label>
+        <label><input name="prefer" value="national-park-el-avila" type="checkbox" class="input-checkbox" />National
+          park El Avila</label>
+        <label><input name="prefer" value="national-park-mochima" type="checkbox" class="input-checkbox" />National park
+          Mochima</label>
+        <label><input name="prefer" value="guayanes-shield" type="checkbox" class="input-checkbox" />Guayanes
+          shield</label>
+        <label><input name="prefer" value="porlamar" type="checkbox" class="input-checkbox" />Porlamar</label>
+      </div>
+
+      <div class="form-group">
+        <p>leave your comment here</p>
+        <textarea id="comments" class="input-textarea" name="comment"
+          placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  <!--
 
     Hello Camper!
 
@@ -21,6 +115,7 @@
     - The freeCodeCamp Team
 
     -->
-    <script  src="js/index.js"></script>
-  </body>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
